@@ -21,7 +21,7 @@ function ProductDetail() {
     product && (
       <div className="bg-[#F3F4F6] w-full min-h-screen">
         <Navbar />
-        <div className="w-full  h-[80vh] p-4 flex flex-col md:flex-row gap-4 items-center justify-center">
+        <div className="w-full  min-h-[80vh] p-4 flex flex-col md:flex-row gap-4 items-center justify-center">
           <div className=" w-full md:w-[30vw] h-1/2 md:h-[60vh] p-4 rounded-2xl bg-white flex items-center justify-center">
             <img className="h-[90%]" src={product.image} alt="" />
           </div>
