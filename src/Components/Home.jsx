@@ -6,6 +6,7 @@ import HeroSection from "./Partials/Hero";
 import CategoryCards from "./Partials/CategoryCards";
 import Card from "./Partials/Card";
 import Features from "./Partials/Features";
+import Footer from "./Partials/Footer";
 
 function Home() {
   const dispatch = useDispatch();
@@ -34,36 +35,37 @@ function Home() {
       <h1 className="bg-[#4F46E5] px-4 py-2 ml-4 font-bold text-2xl my-4 text-white w-fit">
         Men's Collection
       </h1>
-      <div className="w-full p-4 flex overflow-x-auto gap-2">
+      <div className="w-full flex overflow-x-auto gap-5 ">
         {mens.map((product, idx) => (
-          <Card data={product} />
+          <Card key={idx} data={product} />
         ))}
       </div>
       <Features />
       <h1 className="bg-[#4F46E5] px-4 py-2 ml-4 font-bold text-2xl my-4 text-white w-fit">
         Women's Collection
       </h1>
-      <div className="w-full p-4 flex overflow-x-auto gap-2">
+      <div className="w-full p-4 flex overflow-x-auto gap-5 ">
         {women.map((product, idx) => (
-          <Card data={product} />
+          <Card key={idx} data={product} />
         ))}
       </div>
       <h1 className="bg-[#4F46E5] px-4 py-2 ml-4 font-bold text-2xl my-4 text-white w-fit">
-      Jewelery's Collection
+        Jewelery's Collection
       </h1>
-      <div className="w-full p-4 flex overflow-x-auto gap-2">
+      <div className="w-full p-4 flex overflow-x-auto gap-5 ">
         {jewelery.map((product, idx) => (
-          <Card data={product} />
+          <Card key={idx} data={product} />
         ))}
       </div>
       <h1 className="bg-[#4F46E5] px-4 py-2 ml-4 font-bold text-2xl my-4 text-white w-fit">
-      Electronics's Collection
+        Electronics's Collection
       </h1>
-      <div className="w-full p-4 flex overflow-x-auto gap-2">
+      <div className="w-full p-4 flex overflow-x-auto gap-5 ">
         {electronics.map((product, idx) => (
-          <Card data={product} />
+          <Card key={idx} data={product} />
         ))}
       </div>
+      <Footer/>
     </div>
   );
 }
