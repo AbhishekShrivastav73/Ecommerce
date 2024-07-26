@@ -7,6 +7,7 @@ import CategoryCards from "./Partials/CategoryCards";
 import Card from "./Partials/Card";
 import Features from "./Partials/Features";
 import Footer from "./Partials/Footer";
+import Testimonials from "./Partials/Testimonials";
 
 function Home() {
   const dispatch = useDispatch();
@@ -32,6 +33,7 @@ function Home() {
       <Navbar />
       <HeroSection />
       <CategoryCards products={distinctCategory} />
+      <Testimonials/>
       <h1 className="bg-[#4F46E5] px-4 py-2 ml-4 font-bold text-2xl my-4 text-white w-fit">
         Men's Collection
       </h1>

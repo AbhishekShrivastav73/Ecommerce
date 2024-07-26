@@ -2,6 +2,7 @@ import axios from "../utils/axios";
 import React, { useEffect, useState } from "react";
 import { useParams } from "react-router-dom";
 import Navbar from "./Partials/Navbar";
+import Footer from "./Partials/Footer";
 
 function ProductDetail() {
   const { id } = useParams();
@@ -34,7 +35,11 @@ function ProductDetail() {
             <button className="w-full bg-[#4F46E5] rounded-md font-semibold text-white py-4">Add to Cart</button>
           </div>
         </div>
+
+        <Footer/>
+
       </div>
+
     )
   );
 }
