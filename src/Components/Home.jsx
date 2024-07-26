@@ -37,7 +37,7 @@ function Home() {
       <h1 className="bg-[#4F46E5] px-4 py-2 ml-4 font-bold text-2xl my-4 text-white w-fit">
         Men's Collection
       </h1>
-      <div className="w-full flex overflow-x-auto gap-5 ">
+      <div className="w-full p-4 flex overflow-x-auto gap-5 ">
         {mens.map((product, idx) => (
           <Card key={idx} data={product} />
         ))}
